@@ -75,20 +75,25 @@
                     <input type="text" id="address" name="address" class="address" class="address">
                 </div>
 
+                <div class="app-question">
+                    <label for="address-length">How long have you lived at this address?</label>
+                    <input type="address-length" id="address-length" name="address-length" class="address-length" class="address-length">
+                </div>
+
                 <div class="extra-address-info">
                     <div class="app-question">
-                        <label for="address-info">City:</label>
-                        <input type="text" id="address-info" name="address-info" class="address-info" >
+                        <label for="address-city">City:</label>
+                        <input type="text" id="address-city" name="address-city" class="address-info" >
                     </div>
 
                     <div class="app-question">
-                        <label for="address-info">State:</label>
-                        <input type="text" id="address-info" name="address-info" class="address-info">
+                        <label for="address-state">State:</label>
+                        <input type="text" id="address-state" name="address-state" class="address-info">
                     </div>
 
                     <div class="app-question">
-                        <label for="address-info">Zip:</label>
-                        <input type="text" id="address-info" name="address-info" class="address-info">
+                        <label for="address-zip">Zip:</label>
+                        <input type="text" id="address-zip" name="address-zip" class="address-info">
                     </div>
                 </div>
 
@@ -97,10 +102,40 @@
                    # <input type="license-num" id="license-num" name="license-num">
                 </div>
 
+                <div class="numbers">
+                    <div class="app-question">
+                        <label for="home-num"> Home Number:</label>
+                        <input type="home-num" id="home-num" name="home-num" class="home-num">
+                    </div> 
+
+                    <div class="app-question">
+                        <label for="cell-num"> Cell Number:</label>
+                        <input type="cell-num" id="cell-num" name="cell-num">
+                    </div> 
+                </div>
+
                 <div class="app-question">
                     <label for="email"> Email Address:</label>
                     <input type="email" id="email" name="email">
                 </div> 
+
+                <div class="app-question">
+                    <label for="confirm-email">Confirm Email Address:</label>
+                    <input type="confirm-email" id="confirm-email" name="confirm-email">
+                </div> 
+
+                <div class="app-question">
+                    <p>Do you have your own transportation?</p>
+                    <input type="radio" id="yes-transportation" name="yes-transportation" value="yes-transportation">
+                    <label for="yes-transportation">Yes</label><br>
+                    <input type="radio" id="no-transportation" name="no-transportation" value="no-transportation">
+                    <label for="no-transportation">No</label><br>
+                </div> 
+
+                
+
+
+
 
                 <div class="app-question">
                     <div data-netlify-recaptcha="true"></div>

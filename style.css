@@ -14,6 +14,10 @@ body{
     display: flex;
 }
 
+:root{
+    --input-padding:2px;
+}
+
 /*----- SIDEBAR SECTION -----*/
 .sidebar{
     background-color: #0FA9FF;
@@ -122,9 +126,9 @@ form{
 
 .fname,
 .address {
-    width: 100%;
+    width: 50%;
     font-size:1.2rem ;
-    padding: 2px;
+    padding: var(--input-padding);
 }
 
 .extra-address-info{
@@ -134,6 +138,17 @@ form{
 .address-info{
     margin-right: 15px;
     font-size:1.2rem ;
-    padding: 2px;
+    padding: var(--input-padding);
 }
 
+.address-length{
+    padding: var(--input-padding);
+}
+
+.numbers{
+    display: flex;
+}
+
+.home-num{
+    margin-right: 20px;
+}
