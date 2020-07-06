@@ -22,7 +22,7 @@ body{
 .sidebar{
     background-color: #0FA9FF;
     height: 100vh;
-    width: 25%;
+    width: 23%;
     position: fixed;
     top: 0px;
 }
@@ -71,7 +71,8 @@ body{
 
 /*-- used to keep form section aligned properly --*/
 .sidebar-bg{
-    width: 25%;
+    width: 23%;
+    background-color: red;
 }
 
 
