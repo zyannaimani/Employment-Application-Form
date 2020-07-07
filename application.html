@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCA'S Employment Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="app-section">
+        <form action="POST" data-netlify="true">
+            <div class="app-opening">
+                <div class="app-opening-content">
+                    <h1 class="app-title">Employment Application</h1>
+                    <h2 class="app-directions">Please complete application below. We will contact you to 
+                        <br>schedule a skills assessment and interview.</h2>
+                </div>
+                <img src="imgs/logo.png" class="logo-img">
+            </div>
+
+            <div class="app-main-content">
+
+                <div class="app-question">
+                    <label for="fname" class="app-question-text">Full Name:</label><br>
+                    <input type="text" id="fname" name="fname" class="fname">
+                </div>
+
+                <div class="app-question">
+                    <label for="application-date" class="app-question-text">Application Date:</label><br>
+                    <input type="date" id="application-date" name="application-date">
+                </div>
+
+                <div class="app-question">
+                    <label for="start-date" class="app-question-text">Date Available to Start:</label><br>
+                    <input type="date" id="start-date" name="start-date">
+                </div>
+
+                <div class="app-question">
+                    <label for="address" class="app-question-text">Address:</label><br>
+                    <input type="text" id="address" name="address" class="address" class="address">
+                </div>
+
+                <div class="app-question">
+                    <label for="address-length" class="app-question-text">How long have you lived at this address?</label><br>
+                    <input type="address-length" id="address-length" name="address-length" class="address-length">
+                </div>
+
+                <div class="address-info-wrap">
+                    <div class="app-question">
+                        <label for="address-city" class="app-question-text">City:</label><br>
+                        <input type="text" id="address-city" name="address-city" class="address-info" >
+                    </div>
+
+                    <div class="app-question">
+                        <label for="address-state" class="app-question-text">State:</label><br>
+                        <input type="text" id="address-state" name="address-state" class="address-info">
+                    </div>
+
+                    <div class="app-question">
+                        <label for="address-zip" class="app-question-text">Zip:</label><br>
+                        <input type="text" id="address-zip" name="address-zip" class="address-info">
+                    </div>
+                </div>
+
+                <div class="app-question">
+                    <label for="license-num" class="app-question-text">Driver License:</label><br>
+                   # <input type="license-num" id="license-num" name="license-num">
+                </div>
+
+                <div class="numbers">
+                    <div class="app-question">
+                        <label for="home-num" class="app-question-text"> Home Number:</label><br>
+                        <input type="home-num" id="home-num" name="home-num" class="home-num">
+                    </div> 
+
+                    <div class="app-question">
+                        <label for="cell-num" class="app-question-text"> Cell Number:</label><br>
+                        <input type="cell-num" id="cell-num" name="cell-num">
+                    </div> 
+                </div>
+
+                <div class="email-address-wrap">
+                    <div class="app-question">
+                        <label for="email" class="app-question-text"> Email Address:</label><br>
+                        <input type="email" id="email" name="email" class="email">
+                    </div> 
+    
+                    <div class="app-question">
+                        <label for="confirm-email" class="app-question-text">Confirm Email Address:</label><br>
+                        <input type="confirm-email" id="confirm-email" name="confirm-email" class="email">
+                    </div> 
+                </div>
+
+                <div class="app-question">
+                    <label class="app-question-text">Do you have your own transportation?</label><br>
+
+                    <span class="radio-option">Yes:</span>
+                    <input type="radio" name="Do you have your own transportation?" value="Yes"><br>
+
+                    <span class="radio-option">No:</span>
+                    <input type="radio"name="Do you have your own transportation?" value="No">
+                    
+                </div> 
+
+                
+
+
+
+
+                <div class="app-question">
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
+                <input type="submit" value="Submit Application" class="btn submit-btn">
+
+            </div>
+        </form>
+    </section>
+</body>
+</html>

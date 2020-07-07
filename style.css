@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Muli', sans-serif;
     box-sizing: border-box;
     max-width: 1824px;
 }
@@ -10,80 +10,42 @@ img{
     width: 100px;
 }
 
-body{
-    display: flex;
+
+.btn {
+    background-color: #333;
+    padding: 15px;
+    display: block;
+    color:white;
+    display: inline-block;
+    text-decoration: none;
 }
 
 :root{
     --input-padding:2px;
+    --color-black:rgba(0, 0, 0, 0.836);
+    --color-gray:rgb(109, 106, 106);
+    --question-row-margin:30px;
+    --longer-input-width:50%;
 }
 
-/*----- SIDEBAR SECTION -----*/
-.sidebar{
-    background-color: #0FA9FF;
+/*----- NOTICE/ START APP PAGE-----*/
+#notice{ 
     height: 100vh;
-    width: 23%;
-    position: fixed;
-    top: 0px;
 }
 
-.sidebar-container{
-    width: 90%;
-    margin: auto;
+.notice-container{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.logo-text,
-.tagline,
-.form-directions{
-    font-family: 'Montserrat', sans-serif;
-    color: #082D42;
-}
-
-.logo-text{
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-
-.tagline{
-    font-weight: 600;
-    font-size: 2rem;
-}
-
-.sidebar-img{
-    display: flex;
     justify-content: center;
-}
-
-.sidebar-img img{
-    width: 260px;
-}
-
-.form-directions{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-/*-- used to keep form section aligned properly --*/
-.sidebar-bg{
-    width: 23%;
-    background-color: red;
-}
-
-
-/*----- FORM SECTION -----*/
-#form-section{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 63%;
-    height: 100vh;
-    margin: 20px auto;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.notice-text{
+    text-align: center;
+    line-height: 23px;
 }
 
 .logo-img{
@@ -91,59 +53,87 @@ body{
     margin-bottom: 18px;
 }
 
-.form-title{
-    font-size: 3rem;
-    margin-bottom: 18px;
+.start-app-btn{
+    margin-top: 20px;
+    background-color:rgb(43, 64, 180);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
 }
 
-.notice{
-    text-align: center;
-    width: 70%;
-    line-height: 23px;
+.start-app-btn:hover{
+    background-color:rgb(231, 160, 26);
 }
 
-/*----- APPLICATION QUESTIONS SECTION -----*/
-input{
-    font-size: 1rem;
-}
 
-.application-questions{
-    display: flex;
-    flex-direction: column;
+/*----- APPLICATION PAGE-----*/
+#app-section{
+    background-color: rgb(197, 220, 241);
+    padding: 50px;
 
 }
 
 form{
-    font-weight: 600;
-    margin-top: 50px;
-    font-size: 1.3rem;
-    display: flex;
-    flex-direction: column;
+    padding: 50px 70px;
+    background-color: white;
+    border-radius: 2%;
 }
+
+.app-opening{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-title{
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color:var(--color-black);
+}
+
+.app-directions{
+    color:var(--color-gray);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.app-main-content{
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+input{
+    margin-top: 7.8px;
+    font-size: 1.2rem;
+    border: 2px solid rgb(180, 176, 176);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 .app-question{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.fname,
-.address {
-    width: 50%;
-    font-size:1.2rem ;
-    padding: var(--input-padding);
+.app-question-text{
+    color:var(--color-black);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+}
+.fname{
+    width: var(--longer-input-width);
 }
 
-.extra-address-info{
+.address{
+    width: var(--longer-input-width);
+}
+
+.address-info-wrap{
     display: flex;
 }
 
 .address-info{
-    margin-right: 15px;
-    font-size:1.2rem ;
-    padding: var(--input-padding);
-}
-
-.address-length{
-    padding: var(--input-padding);
+    margin-right: var(--question-row-margin);
 }
 
 .numbers{
@@ -151,5 +141,32 @@ form{
 }
 
 .home-num{
-    margin-right: 20px;
+    margin-right: var(--question-row-margin);
 }
+
+.email-address-wrap{
+    display: flex;
+}
+
+.email{
+    margin-right: var(--question-row-margin);
+}
+
+.radio-option{
+    font-size: 1.2rem;
+}
+
+
+
+.submit-btn{
+    background-color:rgb(43, 64, 180);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color:rgb(231, 160, 26);
+}
+

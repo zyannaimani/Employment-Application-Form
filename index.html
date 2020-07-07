@@ -4,149 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCA Employment Form</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body >
+    <section id="notice">
+        <div class="notice-container">
+            <img src="imgs/logo.png" class="logo-img">
+            <p class="notice-text">
+                Notice to Applicant: All information requested is relevant and important to making a hiring decision.
+                AN INCOMPLETE APPLICATION WILL NOT BE CONSIDERED. <br> <br>
 
-    <!----- SIDEBAR SECTION ----->
-    <div class="sidebar">
-        <div class="sidebar-container">
-            <div class="sidebar-logo">
-                <p class="logo-text">SCA Tutoring Center</p>
-                <p class="tagline">
-                    Helping students<br> learn that need it <br> the most.
-                </p>
-            </div>
-            <div class="sidebar-img" class="sidebar-img">
-                <img src="imgs/tutor.svg" >
-            </div>
-            <p class="form-directions">
-                Please complete the application. We will contact you to schedule a skills assessment and interview.
+                We will verify the information you provide. Intentionally withholding or misrepresenting information could result in rejection 
+                for employment, or if employed, termination from the company. <br> <br>
+
+                Please be advised: TUTOR RESPONSIBILITIES are twofold. As a tutor, you will be assigned students. Your first responsibility will be to help the students learn the course material. This usually means working with them on a one-to-one basis or in a small group. Working with students requires tremendous patience. 
+                When a student asks a question, the most effective way to work is to first explain the concept in a straightforward manner, do an example demonstrating how that skill works, and lastly, guide them through two or three examples, not actually telling them what to do, but allowing the students to struggle a bit with the problem, giving hints along the way. 
+                The second responsibility of a tutor is that of record keeping. Accurate, neat, up-to-date records are absolutely necessary and vital. At first, the paperwork may seem to be a lot, but it can be taken care of during the hour in about 5-6 minutes. The importance of the second part of the job should never be minimized.
             </p>
+            <a href="#" class="btn start-app-btn" id="start-app-btn">Start Application</a>
         </div>
-    </div>
-    <div class="sidebar-bg"></div>
-
-
-    <!----- FORM SECTION ----->
-    <section id="form-section">
-        <img src="imgs/logo.png" class="logo-img">
-        <h1 class="form-title">Employment Application</h1>
-        <p class="notice">
-            Notice to Applicant: All information requested is relevant and important to making a hiring decision.
-             AN INCOMPLETE APPLICATION WILL NOT BE CONSIDERED. <br> <br>
-
-            We will verify the information you provide. Intentionally withholding or misrepresenting information could result in rejection 
-            for employment, or if employed, termination from the company. <br> <br>
-
-            Please be advised: TUTOR RESPONSIBILITIES are twofold. As a tutor, you will be assigned students. Your first responsibility will be to help the students learn the course material. This usually means working with them on a one-to-one basis or in a small group. Working with students requires tremendous patience. 
-            When a student asks a question, the most effective way to work is to first explain the concept in a straightforward manner, do an example demonstrating how that skill works, and lastly, guide them through two or three examples, not actually telling them what to do, but allowing the students to struggle a bit with the problem, giving hints along the way. 
-            The second responsibility of a tutor is that of record keeping. Accurate, neat, up-to-date records are absolutely necessary and vital. At first, the paperwork may seem to be a lot, but it can be taken care of during the hour in about 5-6 minutes. The importance of the second part of the job should never be minimized.
-        </p>
-
-        <div class="application-questions">
-            
-            <form action="POST" data-netlify="true">
-                <div class="app-question">
-                    <label for="application-date">Application Date:</label>
-                    <input type="date" id="application-date" name="application-date">
-                </div>
-
-                <div class="app-question">
-                    <label for="start-date">Date Available to Start:</label>
-                    <input type="date" id="start-date" name="start-date">
-                </div>
-
-                <div class="app-question">
-                    <label for="birthday">Date Available to Start:</label>
-                    <input type="date" id="application-date" name="application-date">
-                </div>
-
-                <div class="app-question">
-                    <label for="fname">Full Name:</label>
-                    <input type="text" id="fname" name="fname" class="fname">
-                </div>
-
-                <div class="app-question">
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" class="address" class="address">
-                </div>
-
-                <div class="app-question">
-                    <label for="address-length">How long have you lived at this address?</label>
-                    <input type="address-length" id="address-length" name="address-length" class="address-length" class="address-length">
-                </div>
-
-                <div class="extra-address-info">
-                    <div class="app-question">
-                        <label for="address-city">City:</label>
-                        <input type="text" id="address-city" name="address-city" class="address-info" >
-                    </div>
-
-                    <div class="app-question">
-                        <label for="address-state">State:</label>
-                        <input type="text" id="address-state" name="address-state" class="address-info">
-                    </div>
-
-                    <div class="app-question">
-                        <label for="address-zip">Zip:</label>
-                        <input type="text" id="address-zip" name="address-zip" class="address-info">
-                    </div>
-                </div>
-
-                <div class="app-question">
-                    <label for="license-num">Driver License:</label>
-                   # <input type="license-num" id="license-num" name="license-num">
-                </div>
-
-                <div class="numbers">
-                    <div class="app-question">
-                        <label for="home-num"> Home Number:</label>
-                        <input type="home-num" id="home-num" name="home-num" class="home-num">
-                    </div> 
-
-                    <div class="app-question">
-                        <label for="cell-num"> Cell Number:</label>
-                        <input type="cell-num" id="cell-num" name="cell-num">
-                    </div> 
-                </div>
-
-                <div class="app-question">
-                    <label for="email"> Email Address:</label>
-                    <input type="email" id="email" name="email">
-                </div> 
-
-                <div class="app-question">
-                    <label for="confirm-email">Confirm Email Address:</label>
-                    <input type="confirm-email" id="confirm-email" name="confirm-email">
-                </div> 
-
-                <div class="app-question">
-                    <label>Do you have your own transportation?</label><br>
-                    Yes:
-                    <input type="radio" name="yesorno" value="Yes"><br>
-                    No:
-                    <input type="radio"name="yesorno" value="No">
-                </div> 
-
-                
-
-
-
-
-                <div class="app-question">
-                    <div data-netlify-recaptcha="true"></div>
-                </div>
-                <input type="submit" value="Submit Application">
-
-            </form>
-
-        </div>
+        
     </section>
 
-
+   
+-->
 </body>
 </html>
