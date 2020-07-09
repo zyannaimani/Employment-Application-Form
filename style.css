@@ -26,6 +26,7 @@ img{
     --color-gray:rgb(109, 106, 106);
     --question-row-margin:30px;
     --longer-input-width:50%;
+    --smaller-input-width:12%;
 }
 
 /*----- NOTICE/ START APP PAGE-----*/
@@ -101,7 +102,8 @@ form{
     border-radius: 2%;
 }
 
-input{
+input,
+textarea{
     margin-top: 7.8px;
     font-size: 1.2rem;
     border: 2px solid rgb(180, 176, 176);
@@ -156,6 +158,40 @@ input{
     font-size: 1.2rem;
 }
 
+.dif-name{
+    width: var(--longer-input-width);
+}
+
+.checkbox-option{
+    font-size: 1.2rem;
+}
+
+.languages{
+    width: var(--longer-input-width);
+}
+
+.days-hours-available-wrap{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.days-hours-available{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.day-time{
+    margin-bottom: 50px;
+}
+
+.day-time-option{
+    margin-top: 200px;
+}
+
+
+
+
 
 
 .submit-btn{
@@ -168,5 +204,9 @@ input{
 
 .submit-btn:hover{
     background-color:rgb(231, 160, 26);
+}
+
+.salary-desired{
+    width: var(--smaller-input-width);
 }
 
